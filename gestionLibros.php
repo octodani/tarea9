@@ -40,12 +40,12 @@
         }
 
         /**
-         * Hace una consulta sobre los id de los autores existentes en la base de datos que 
+         * Hace una consulta sobre los id, nombre y apellidos de los autores existentes en la base de datos que 
          * coinciden con el string pasado
          *
          * @param  mysqli $conexion Objeto con la conexión a la base de datos
          * @param  int $nombre Cadena con el nombre de los autores que queremos consultar.
-         * @return Array|null Devuelve un array con los ID de los autores consultados o null si la consulta ha fallado
+         * @return Array|null Devuelve un array con los ID, nombres y apellidos de los autores consultados o null si la consulta ha fallado
          */
         function consultarNombreAutores($conexion, $nombre) {
             $conexion->set_charset("utf8");

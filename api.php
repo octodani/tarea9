@@ -72,6 +72,12 @@ function get_datos_libro($id) {
   return $info_libro;
 }
 
+/**
+ * Extrae los nombres de los autores y los titulos de los libros que ha escrito.
+ * 
+ * @param int $str Cadena del autor que se quiere consultar.
+ * @return Array Devuelve un array con los nombres de autores y los titulos de los libros.
+ */
 function get_autores_con_libros($str) {
   $gestion = new gestionLibros();
   $conexion = $gestion->conexion('localhost', 'dani', '1234', 'libros');
